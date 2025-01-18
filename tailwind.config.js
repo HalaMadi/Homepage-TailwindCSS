@@ -1,8 +1,29 @@
+import daisyui from 'daisyui';
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {},
+export const content = ["./src/**/*.{html,js,jsx,ts,tsx}"];
+export const theme = {
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
   },
-  plugins: [],
-}
+  fontFamily: {
+    Poppins: ['Poppins', 'sans-serif']
+  },
+  backgroundImage: {
+    heroImage: "url('assets/heroImage.svg')",
+  },
+  extend: {
+ 
+    dropShadow: {
+      '2xl': '0 6px 3px rgba(0, 0, 0, 0.15)',
+    },
+    colors: {
+      primary: '#3A0CA3',
+      mainText: '#0B090A',
+      secondaryText: '#2B2B2B',
+      color1: '#4361EE'
+    }
+  },
+};
+export const plugins = [daisyui,
+];
