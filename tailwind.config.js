@@ -21,7 +21,8 @@ export const theme = {
       primary: '#3A0CA3',
       mainText: '#0B090A',
       secondaryText: '#2B2B2B',
-      color1: '#4361EE'
+      color1: '#4361EE',
+      color3:'#808080'
     }
   },
 };
