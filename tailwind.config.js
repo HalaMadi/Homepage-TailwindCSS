@@ -1,5 +1,5 @@
 import daisyui from 'daisyui';
-
+import scrollbarHide from 'tailwind-scrollbar-hide';
 /** @type {import('tailwindcss').Config} */
 export const content = ["./src/**/*.{html,js,jsx,ts,tsx}"];
 export const theme = {
@@ -22,9 +22,11 @@ export const theme = {
       mainText: '#0B090A',
       secondaryText: '#2B2B2B',
       color1: '#4361EE',
-      color3:'#808080'
+      color3:'808080'
     }
   },
 };
-export const plugins = [daisyui,
+export const plugins = [
+  scrollbarHide,
+  daisyui,
 ];

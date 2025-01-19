@@ -15,3 +15,8 @@ body,html{
         @apply bg-primary text-white flex px-5 py-3 rounded-[50px] 
     }
 }
+@layer base{
+    h2{
+        @apply text-secondaryText font-semibold text-4xl mt-8
+    }
+}
